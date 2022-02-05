@@ -15,11 +15,23 @@ body {
     background-color: #ABABAB;
     background-image: url('./bg.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header {
+    font-family:cursive;
+    font-size: 1.2em;
+    font-weight: bolder;
+    user-select: none;
+}
+
+h1 {
+    color: #c43c3c;
 }
 
 nav {
@@ -34,6 +46,8 @@ nav > span {
     padding: .65em;
     flex-grow: 1;
     border-radius: 20px;
+    color: #64372d;
+    cursor: pointer;
 }
 
 .select {
@@ -46,10 +60,58 @@ nav > span {
     width: 70vw;
     min-width: 350px;
     max-width: 1000px;
-}
-
-.wrapper {
     background-color: #FCE9D780;
     padding: .85em;
     border-radius: 20px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+}
+
+/* .menu-wrapper:nth-child(even) {
+    align-self: flex-end;
+} */
+
+.menu-item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-item > header {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.menu-item:nth-child(even) > header {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+.menu-item:nth-child(even) {
+    align-self: flex-end;
+    text-align: right;
+}
+
+.menu-title {
+    font-size: 1.2em;
+    color: #c43c3c;
+}
+
+.price {
+    display: inline;
+    color: #3a2206;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.price::before {
+    content: "$";
 }
