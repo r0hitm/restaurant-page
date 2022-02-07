@@ -7,8 +7,6 @@ import { addContent as addHomePageContent} from './home.js';
 import { addContent as addAboutUs } from './about.js';
 import { addMenu } from './menu.js';
 
-import './style.css';
-
 const page = document.getElementById('content');
 
 /**
