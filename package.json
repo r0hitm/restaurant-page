@@ -8,6 +8,7 @@
     "watch": "webpack --watch",
     "debug": "webpack --watch --mode='development'"
   },
+  "sideEffects": ["./src/index.js", "*.css"],
   "author": "Rohit M",
   "license": "ISC",
   "devDependencies": {
