@@ -5,6 +5,7 @@
  */
 import { addContent as addHomePageContent} from './home.js';
 import { addContent as addAboutUs } from './about.js';
+import { addMenu } from './menu.js';
 
 // Implementation of tab-switch logic
 const tabs = Array.from(document.querySelectorAll('span.tab'));
@@ -21,4 +22,4 @@ tabs.forEach(el => el.addEventListener('click', function() {
     // }
 }));
 
-// addAboutUs(document.getElementById('content'));
+// addMenu(document.getElementById('content'));
