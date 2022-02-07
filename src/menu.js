@@ -17,6 +17,7 @@
  */
 
 import { addLogo } from "./home";
+import './menu-style.css';
 
 /**
  * Create a menu item for the menu page
