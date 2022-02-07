@@ -5,11 +5,6 @@ Learning ES6 modules and webpack through this project.
 
 See it working live 👉 [here](https://r0hitm.github.io/restaurant-page)
 
-## To Do
-
-- Refactor `home.js` with improvement in adding content without using innerHTML
-- similarly refactor `about.js`
-
 ---
 
 Author: [Rohit M](https://github.com/r0hitm)
